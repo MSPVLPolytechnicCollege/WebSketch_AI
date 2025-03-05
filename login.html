@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="parentLogin">
+        <div class="login">
+            <h1>Login Form</h1>
+            <div class="userdetails">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>Username</p>
+            </div>
+            <input type="text" id="login_username">
+            <div class="userdetails">
+                <i class="fa-solid fa-lock"></i>
+                <p>Password</p>
+            </div>
+            <input type="text" id="login_password">
+            <button id="btn_login">Login</button>
+            <p>Don't have an account?<a class="register">Register</a></p>
+        </div>
+    </div>
+
+    <div class="parentSignin">
+        <div class="signin">
+            <h1>Signin Form</h1>
+            <div class="userdetails">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="Email_name">Email</p>
+            </div>
+            <input type="text" id="signin_email">
+            <div class="userdetails">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>Username</p>
+            </div>
+            <input type="text" id="signin_username">
+            <div class="userdetails">
+                <i class="fa-solid fa-lock"></i>
+                <p>Password</p>
+            </div>
+            <input type="text" id="signin_password">
+            <div class="btn">
+                <button id="btn_signin">Sign in</button>
+                <button class="btn_back">Back</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>

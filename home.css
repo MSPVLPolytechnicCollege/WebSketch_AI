@@ -1,0 +1,214 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+    background-color: whitesmoke;
+    font-family:Roboto, sans-serif;
+}
+header{
+    width:100%;
+    height:70px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.siteDetails{
+    width:30%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    column-gap:30px;
+    .logo{
+        width:50px;
+        height:50px;
+        img{
+            width:100%;
+        }
+    }
+    h2{
+        background:linear-gradient(to right,rgb(233, 89, 113),blue);
+        -webkit-text-fill-color:transparent;
+        background-clip:text;
+    }
+}
+.menus{
+    width:70%;
+    height:70px;
+    display: grid;
+    place-items:center;
+    ul{
+        width:70%;
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        list-style:none;
+    }
+    li{
+        cursor: pointer;
+        background-color:black;
+        color:white;
+        padding:10px 28px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius:3vh;
+    }
+    li:hover{
+        background-color: white;
+        color:black;
+        border:1px solid black;
+    }
+}
+
+.main{
+    width:100%;
+    height:570px;
+    .parentHome{
+        width:100%;
+        height:570px;
+    }
+    .childHome{
+        width:100%;
+        height:570px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+        .homeimg{
+            width:400px;
+            height:400px;
+            img{
+                width:100%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius:2vh;
+            }
+        }
+        .content1{
+            font-size:30px;
+            background:linear-gradient(to right,rgb(218, 53, 80),blue);
+            -webkit-text-fill-color:transparent;
+            background-clip:text;
+            font-weight:bold;
+        }
+        .content2{
+            font-size:20px;
+            font-weight:bold;
+            color: rgb(73, 70, 70);
+        }
+    }
+}
+.parentRecents{
+    width:100%;
+    height:570px;
+}
+.childRecents{
+    width:100%;
+    height:570px;
+    display: grid;
+    place-items:center;
+    .recents{
+        width:70%;
+        height:400px;
+        background-color: white;
+        border-radius:2vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+}
+.parentAI{
+    width:100%;
+    height:570px;
+}
+.childAI{
+    width:100%;
+    height:570px;
+    display: grid;
+    place-items:center;
+    .chatArea{
+        display:flex;
+        flex-direction:column;
+        row-gap:30px;
+        margin-top:20px;
+        width:70%;
+        height:420px;
+        overflow-y:scroll;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius:2vh;
+        padding:12px;
+    }
+    .srcArea{
+        width:70%;
+        height:80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap:30px;
+        .sentlogo{
+            width:33px;
+            height:33px;
+            img{
+                width:100%;
+            }
+        }
+        input{
+            cursor: pointer;
+            width:70%;
+            padding:12px 18px;
+            outline: none;
+            border: none;
+            background-color:rgb(163, 157, 157);
+            border-radius:3vh;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        ::placeholder{
+            color:rgb(63, 62, 62);
+            font-weight: bold;
+        }
+    }
+
+}
+.Admin{
+    display: none;
+}
+.parentAdmin{
+    width:100%;
+    height:570px;
+    display: none;
+}
+.childAdmin{
+    width:100%;
+    height:570px;
+    overflow-y: scroll;
+    display:grid;
+    place-items:center;
+    table {
+        border-collapse: collapse;
+        width:85%;
+        border:2px solid;
+        text-align:center;
+    }
+    tr{
+        padding:5px;
+        border:2px solid;
+    }
+    td,th{
+        padding:5px;
+        border:2px solid;
+    }
+}
+
+.userChat{
+     
+    background-color:rgb(163, 159, 159);
+    padding:15px;
+    width:250px;
+    height:fit-content;
+    display:grid;
+    place-items:center;
+    overflow-wrap: anywhere;
+    text-align:justify;
+    border-radius:2vh 2vh 0vh 2vh;
+}
